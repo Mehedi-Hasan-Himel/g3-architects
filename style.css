@@ -1,0 +1,96 @@
+/*
+    Google work sans font associated with CSS
+ */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter&family=Dancing+Script:wght@500&family=Edu+NSW+ACT+Foundation&family=Edu+SA+Beginner:wght@700&family=Inter&family=Lobster&family=Merriweather&family=Noto+Sans&family=Open+Sans&family=Poppins:wght@400;500&family=Roboto:wght@500&family=Splash&family=Work+Sans&display=swap");
+
+
+/*
+    Common all styles
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+}
+
+.golden-btn {
+  width: 135px;
+  height: 45px;
+  border: none;
+  background: #ff900e;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* 
+    HEADER SECTION AND NAVIGATION
+ */
+
+header {
+  background: white;
+  padding: 5.5px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav {
+  width: 80%;
+  height: 81px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > .logo {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 25px;
+  color: #131313;
+  cursor: pointer;
+}
+nav .links {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 18px;
+  align-items: center;
+}
+nav .links li {
+  list-style: none;
+}
+nav .links a {
+  display: block;
+  padding: 0.6em 1em;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #424242;
+  border: 1px solid transparent;
+}
+nav .links a:hover {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+}
+#nav-toggle {
+  position: absolute;
+  top: -100px;
+}
+nav .icon-burger {
+  display: none;
+}
